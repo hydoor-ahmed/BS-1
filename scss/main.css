@@ -280,7 +280,7 @@ nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link::after, nav .navbar-co
 .testimonials .boxs .box .author img {
   width: 44px;
   border-radius: 50%;
-  height: 50px;
+  height: 44px;
 }
 .testimonials .boxs .box .author h2 {
   font-size: 17px;
@@ -532,6 +532,11 @@ nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link::after, nav .navbar-co
   border-radius: 3px;
   padding-bottom: 12px;
 }
+@media (max-width: 991px) {
+  .news .container .boxs .box:last-child {
+    margin-top: 20px;
+  }
+}
 .news .container .boxs .box img {
   width: 100%;
 }
@@ -547,6 +552,11 @@ nav .navbar-collapse ul.navbar-nav li.nav-item a.nav-link::after, nav .navbar-co
   font-size: 20px;
   color: black;
   font-weight: 500;
+}
+@media (max-width: 1199px) {
+  .news .container .boxs .box .text h1 {
+    font-size: 18px;
+  }
 }
 .news .container .boxs .box .author {
   padding-left: 12px;
