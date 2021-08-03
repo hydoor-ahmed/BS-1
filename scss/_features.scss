@@ -1,0 +1,27 @@
+.features {
+  margin-top: 50px;
+  text-align: center;
+
+  .card {
+    color: black;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 1px 9px 0 rgba(30, 86, 178, 0.15);
+    padding-bottom: 18px;
+
+    img {
+      width: 64px;
+      margin: 20px auto;
+    }
+    h1 {
+      font-size: 25px;
+      color: black;
+      margin-top: 5px;
+    }
+    p {
+      color: black;
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+}

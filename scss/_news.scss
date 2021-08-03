@@ -1,0 +1,51 @@
+
+.news {
+  margin-top: 50px;
+
+  .container {
+
+    .boxs {
+
+      .box {
+        @extend %shadow;
+        overflow: hidden;
+        border-radius: 3px;
+        padding-bottom: 12px;
+
+        img {
+          width: 100%;
+        }
+        .text {
+          padding: 12px;
+
+          a {
+            color: $main-blue;
+            font-size: 15px;
+          }
+          h1 {
+            font-family: $poppins;
+            font-size: 20px;
+            color: black;
+            font-weight: 500;
+          }
+        }
+
+        .author {
+          padding-left: 12px;
+          img {
+            width: 30px;
+            border-radius: 50%;
+          }
+          a {
+            font-size: 14px;
+          }
+          span {
+            @extend a;
+            color: #333;
+          }
+          i {}
+        }
+      }
+    }
+  }
+}

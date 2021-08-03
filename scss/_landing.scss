@@ -1,0 +1,87 @@
+.landing {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+
+  .text {
+    width: 100%;
+    @media (max-width: 432px) {
+      margin-top: 50px;
+    }
+    %textShadow {
+      text-shadow: 5px 2px 15px rgba(0, 0, 0, 0.329);
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: bolder;
+      @extend %textShadow;
+
+      @media (max-width: 528px) {
+        font-size: 30px;
+      }
+    }
+    h3 {
+      font-size: 35px;
+      margin-bottom: 45px;
+      @extend %textShadow;
+
+      @media (max-width: 528px) {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 20px;
+      margin-bottom: 50px;
+      @extend %textShadow;
+
+      @media (max-width: 528px) {
+        font-size: 15px;
+      }
+    }
+  }
+  .btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 432px) {
+      flex-direction: column;
+    }
+    %btns-style {
+      width: 218px;
+      padding: 17px 0;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      transition: .3s;
+      
+    }
+    a:nth-child(1) {
+      color: #212529;
+      background: white;
+      width: 220px;
+      @extend %btns-style;
+      margin-right: 15px;
+      &:hover {
+        background: rgb(238, 238, 238);
+      }
+      @media (max-width: 432px) {
+        margin-bottom: 20px;
+      }
+    }
+    a:nth-child(2) {
+      color: white;
+      background: $main-blue;
+      @extend %btns-style;
+      &:hover {
+        background: #264fd6;
+        color: rgb(230, 230, 230);
+      }
+    }
+  }
+}

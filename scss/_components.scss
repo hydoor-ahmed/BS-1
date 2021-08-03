@@ -1,0 +1,26 @@
+.sectionBg {
+  background-image: linear-gradient(rgb(31, 31, 31, 0.6), rgb(31, 31, 31, 0.6)), url(../img/landing-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 70px;
+
+  h1 {
+    color: #333;
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  p {
+    color: #17a2b8;
+    font-size: 20px;
+    font-weight: 100;
+  }
+}
+%shadow {
+  box-shadow: 0 1px 9px 0 rgba(30, 86, 178, 0.15);
+}

@@ -1,0 +1,24 @@
+
+.gallery {
+  margin-top: 70px;
+
+  .photos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 0;
+    @media (max-width: 400px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        cursor: pointer;
+
+      }
+    
+  }
+}

@@ -1,0 +1,83 @@
+.testimonials {
+  background: $testimonials-bg;
+  padding: 50px 0;
+  margin-top: 80px;
+
+  .heading {
+    margin-top: 20px;
+    h1 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+
+  .boxs {
+    .box {
+      background: white;
+      padding: 60px;
+      &::before {
+        content: "\201C";
+        color: #333;
+        font-family: "georgia";
+        font-size: 70px;
+        position: absolute;
+        top: 12px;
+        left: 70px;
+      }
+      @media (max-width: 991px) {
+        &:last-of-type {
+          margin-top: 24px;
+        }
+      }
+      p {
+        color: black;
+        font-size: 18px;
+      }
+
+      .author {
+        img {
+          width: 44px;
+          border-radius: 50%;
+          height: 50px;
+        }
+        h2 {
+          font-size: 17px;
+          color: #333;
+          margin-top: 6px;
+          margin-left: 8px;
+          font-weight: bold;
+          @media (max-width: 1199px) {
+            margin-left: 4px;
+            font-weight: 100;
+          }
+
+          span {
+            display: inline-block;
+            width: 10px;
+            color: black;
+            overflow: hidden;
+            height: 17px;
+          }
+        }
+        .name {
+          display: flex;
+          flex-direction: column;
+        }
+        p {
+          color: #6c757d;
+          font-size: 13px;
+          font-style: italic;
+          margin-left: 50px;
+          margin-top: -17px;
+
+          &:nth-child(2) {
+            margin-left: 9px;
+            margin-top: -12px;
+          }
+        }
+      }
+    }
+  }
+}

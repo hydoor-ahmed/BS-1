@@ -1,0 +1,62 @@
+
+.brands {
+  margin-top: 60px;
+
+  .container {
+    .imgs {
+      width: 100%;
+
+      img {
+        width: 150px;
+        margin: 0 auto;
+        @media (max-width: 991px) {
+          &:last-child {
+            margin-top: 20px;
+          }
+        }
+        @media (max-width: 767px) {
+          &:nth-child(5) {
+            margin-top: 20px;
+          }
+          &:nth-child(4) {
+            margin-top: 20px;
+          }
+        }
+        @media (max-width: 449px) {
+          &:nth-child(3) {
+            margin-top: 20px;
+          }
+        }
+        @media (max-width: 299px) {
+          &:nth-child(2) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .bullets {
+      width: 100%;
+      text-align: center;
+      user-select: none;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      span {
+        background: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 10px;
+        cursor: pointer;
+        padding: 2.3px;
+
+        &:first-of-type {
+          background: #333;
+        }
+        @media (max-width: 275px) {
+          margin: 0 5px;
+        }
+        
+      }
+    }
+  }
+}

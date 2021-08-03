@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "vars";
+@import "components";
+@import "navbar";
+@import "landing";
+@import "features";
+@import "about";
+@import "team";
+@import "testimonials";
+@import "services";
+@import "gallery";
+@import "brands";
+@import "growing";
+@import "news";
+
+* {
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 9000px;
+}

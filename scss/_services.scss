@@ -1,0 +1,63 @@
+
+.services {
+  margin-top: 50px;
+
+  .heading {
+    p {
+      color: $syan;
+    }
+  }
+
+  p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600px;
+  }
+  .boxs {
+    margin-top: 60px;
+
+    .box {
+      text-align: center;
+      background: rgb(243, 243, 243);
+      padding-bottom: 50px;
+      @extend %shadow;
+      @media (max-width: 991px) {
+        &:last-child {
+          margin-top: 25px;
+        }
+      }
+ 
+      img {
+        width: 100%;
+      }
+      h1 {
+        color: #333;
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 21px;
+      }
+      a {
+        border-radius: 2px;
+        border: 1px solid $main-blue;
+        color: $main-blue;
+        padding: 9px 25px;
+        text-decoration: none;
+        font-size: 17px;
+        background: transparent;
+        transition: .3s;
+        font-family: $poppins;
+        font-weight: 500;
+        
+        &:hover {
+          background: $main-blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
